@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { TableData } from './TableDataInfo.styled';
 
 export const TableDataInfo = ({ type, amount, currency }) => {
@@ -8,4 +9,10 @@ export const TableDataInfo = ({ type, amount, currency }) => {
       <TableData>{currency}</TableData>
     </>
   );
+};
+
+TableDataInfo.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 };

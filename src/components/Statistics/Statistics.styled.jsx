@@ -30,6 +30,7 @@ export const StatsItem = styled.li`
   gap: 5px;
 
   padding: 10px;
+  /* margin: 0; */
 
   background-color: ${getRandomHexColor};
   list-style: none;

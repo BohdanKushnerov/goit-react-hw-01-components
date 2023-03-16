@@ -5,7 +5,6 @@ export const Item = styled.li`
   align-items: center;
   gap: 10px;
 
-  margin-bottom: 10px;
   padding: 15px;
   width: 150px;
   height: 50px;
@@ -15,6 +14,10 @@ export const Item = styled.li`
 `;
 
 export const Friends = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
   list-style: none;
   margin: 0;
   padding: 0;
