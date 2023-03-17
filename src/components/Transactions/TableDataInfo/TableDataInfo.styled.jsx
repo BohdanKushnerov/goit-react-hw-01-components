@@ -6,5 +6,5 @@ export const TableData = styled.td`
   width: 150px;
 
   text-align: center;
-  border: 1px solid #9c9b9b;
+  border: 1px solid ${p => p.theme.colors.gray};
 `;

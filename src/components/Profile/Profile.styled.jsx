@@ -7,9 +7,9 @@ export const ProfileCard = styled.div`
   width: 300px;
   height: auto;
 
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: ${p => p.theme.colors.white};
+  box-shadow: ${p => p.theme.colors.boxShadow};
+  border-radius: 5px;
 `;
 
 export const Image = styled.img`
@@ -36,7 +36,7 @@ export const Name = styled.p`
 export const StatsList = styled.ul`
   display: flex;
 
-  background-color: #d2d2ff;
+  background-color: ${p => p.theme.colors.secondaryBcg};
 `;
 
 export const Item = styled.li`
@@ -46,7 +46,15 @@ export const Item = styled.li`
 
   width: 100%;
   padding: 16px;
-  border: 1px solid gray;
+  border: 1px solid ${p => p.theme.colors.gray};
+
+  :first-of-type {
+    border-radius: 0 0 0 5px;
+  }
+
+  :last-child {
+    border-radius: 0 0 5px 0;
+  }
 `;
 
 export const Quantity = styled.span`

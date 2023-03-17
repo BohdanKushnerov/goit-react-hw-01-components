@@ -7,10 +7,10 @@ export const Status = styled.span`
   background-color: ${props => {
     switch (props.isOnline) {
       case true:
-        return 'green';
+        return props.theme.colors.green;
 
       default:
-        return 'red';
+        return props.theme.colors.red;
     }
   }};
 `;

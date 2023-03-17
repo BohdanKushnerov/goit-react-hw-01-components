@@ -7,9 +7,9 @@ export const SectionStats = styled.section`
 
   width: 300px;
 
-  background-color: white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: ${p => p.theme.colors.white};
+  box-shadow: ${p => p.theme.colors.boxShadow};
+  border-radius: 5px;
 `;
 
 export const Title = styled.h2`
@@ -32,16 +32,24 @@ export const StatsItem = styled.li`
   padding: 10px;
 
   background-color: ${getRandomHexColor};
+
+  :first-of-type {
+    border-radius: 0 0 0 5px;
+  }
+
+  :last-child {
+    border-radius: 0 0 5px 0;
+  }
 `;
 
 export const Label = styled.span`
-  color: white;
+  color: ${p => p.theme.colors.white};
 `;
 
 export const Percentage = styled.span`
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: ${p => p.theme.colors.white};
 `;
 
 function getRandomHexColor() {
