@@ -4,11 +4,8 @@ import {
   Image,
   Description,
   Name,
-  Tag,
-  Location,
   StatsList,
-  ItemList,
-  Label,
+  Item,
   Quantity,
 } from './Profile.styled';
 
@@ -20,22 +17,22 @@ export const Profile = ({ user }) => {
       <Description>
         <Image src={avatar} alt="User avatar" />
         <Name>{username}</Name>
-        <Tag>@{tag}</Tag>
-        <Location>{location}</Location>
+        <p>@{tag}</p>
+        <p>{location}</p>
       </Description>
       <StatsList>
-        <ItemList>
-          <Label>Followers</Label>
+        <Item>
+          <span>Followers</span>
           <Quantity>{stats.followers}</Quantity>
-        </ItemList>
-        <ItemList>
-          <Label>Views</Label>
+        </Item>
+        <Item>
+          <span>Views</span>
           <Quantity>{stats.views}</Quantity>
-        </ItemList>
-        <ItemList>
-          <Label>Likes</Label>
+        </Item>
+        <Item>
+          <span>Likes</span>
           <Quantity>{stats.likes}</Quantity>
-        </ItemList>
+        </Item>
       </StatsList>
     </ProfileCard>
   );

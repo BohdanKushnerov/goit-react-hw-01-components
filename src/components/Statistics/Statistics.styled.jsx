@@ -5,35 +5,33 @@ export const SectionStats = styled.section`
   flex-direction: column;
   justify-content: center;
 
-  width: 350px;
+  width: 300px;
+
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 `;
 
 export const Title = styled.h2`
   margin: 0 auto;
   padding: 16px;
 
-  text-transform: Uppercase;
+  text-transform: uppercase;
 `;
 
 export const StatsList = styled.ul`
   display: flex;
-
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
 `;
 
 export const StatsItem = styled.li`
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
   gap: 5px;
 
+  width: 100%;
   padding: 10px;
-  /* margin: 0; */
 
   background-color: ${getRandomHexColor};
-  list-style: none;
 `;
 
 export const Label = styled.span`

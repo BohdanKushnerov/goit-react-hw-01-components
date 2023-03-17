@@ -2,16 +2,14 @@ import styled from '@emotion/styled';
 
 export const Table = styled.table`
   width: 500px;
+
   border-collapse: collapse;
-  border: 2px solid #9c9b9b;
-  /* border: 3px solid purple; */
+  border: 1px solid #9c9b9b;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 `;
 
-// export const TableBody = styled.tbody``;
-
 export const TableRow = styled.tr`
-  /* display: flex;
-  justify-content: center; */
   :nth-of-type(even) {
     background-color: #c4cadd;
   }

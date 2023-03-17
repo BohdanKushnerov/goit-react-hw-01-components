@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Status = styled.span`
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: ${props => {
     switch (props.isOnline) {
@@ -14,8 +14,6 @@ export const Status = styled.span`
     }
   }};
 `;
-
-export const Avatar = styled.img``;
 
 export const Name = styled.p`
   font-weight: bold;
