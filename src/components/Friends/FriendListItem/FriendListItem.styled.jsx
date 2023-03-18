@@ -4,7 +4,7 @@ export const Status = styled.span`
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: ${props => {
+  /* background-color: ${props => {
     switch (props.isOnline) {
       case true:
         return props.theme.colors.green;
@@ -12,6 +12,9 @@ export const Status = styled.span`
       default:
         return props.theme.colors.red;
     }
+  }}; */
+  background-color: ${props => {
+    return props.isOnline ? props.theme.colors.green : props.theme.colors.red;
   }};
 `;
 
